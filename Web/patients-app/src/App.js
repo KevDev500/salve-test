@@ -30,9 +30,9 @@ const App = () => {
   return (
     <div id='students.title' className="App" title='app'>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={selectedClinicId} onChange={selectTab} aria-label="basic tabs example">
+        <Tabs value={selectedClinicId} onChange={selectTab} aria-label="basic tabs">
           {clinics.map(clinic => (
-            <Tab aria-labelledby='students.title' value={clinic.id} key={clinic.id} label={clinic.name} />
+            <Tab value={clinic.id} key={clinic.id} label={clinic.name} />
           ))}
         </Tabs>
       </Box>
